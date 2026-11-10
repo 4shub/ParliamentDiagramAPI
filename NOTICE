@@ -1,0 +1,19 @@
+This code was translated into Node.js from the Python code in
+https://github.com/slashme/parliamentdiagram
+(source commit a4e01c574216a64a859ac693d26a37ae0f13ea84).
+
+The Westminster layout derives from src/westminster.py.
+Copyright (c) 2026, David Richfield. BSD 3-Clause License; see LICENSE.
+
+The arch and US layouts derive from the parliamentarch 1.1.2 dependency used
+by that repository: https://github.com/Gouvernathor/parliamentarch
+Copyright (c) 2024, Gouvernathor. BSD 3-Clause License;
+see licenses/parliamentarch-LICENSE.
+
+The original US interface calls the same arch generator with preset parties.
+This project supplies a Node.js HTTP API and SVG serialization. No Python
+runtime, Flask, Wikimedia authentication, or original web assets are needed.
+
+Intentional corrections: seat radii use the requested row count and span angle
+rather than the default row geometry; zero-seat parties are skipped; head-only
+and center-only Westminster layouts avoid division by zero.

@@ -1,0 +1,10 @@
+{
+  "name": "parliament-svg-api",
+  "version": "1.0.0",
+  "description": "Node.js SVG parliament diagram API, translated from parliamentdiagram and parliamentarch",
+  "type": "module",
+  "private": true,
+  "license": "BSD-3-Clause",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node src/server.js", "dev": "node --watch src/server.js", "test": "node --test" }
+}
